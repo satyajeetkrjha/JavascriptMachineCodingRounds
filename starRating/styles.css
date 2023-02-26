@@ -1,0 +1,19 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.star-value{
+   font-size: 5px;
+   font-weight: 600;
+   text-align: center;
+   margin-top: 5px;
+}
+.star-style{
+    height: 40px;
+    width: 40px;
+    padding-right: 2px;
+}
