@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color:darkgreen;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    font-size: 1.5rem;
+}
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input ,
+form button {
+    padding: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+}
+
+form button {
+    color: blue;
+    background: white;
+    margin-left: 0.5rem;
+}
+
+form button:hover {
+    color: white;
+    background: rgb(255, 200, 0);
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+select {
+    color:rgb(255, 200, 0);
+    width: 10rem;
+    height: 3.2rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+.select::after {
+    
+    position: absolute;
+    background:rgb(255, 200, 0);
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.select::hover::after {
+    background: white;
+    color: rgb(255, 200, 0);
+}
+
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    display: flex;
+}
+.todo-item{
+    font-size: 2rem;
+}
+.trash-btn{
+    font-size: 1.5rem;
+}
+.complete-btn{
+    font-size: 1.5rem;
+}
+
+.complete-btn{
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+.incomplete-btn{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    
+}
